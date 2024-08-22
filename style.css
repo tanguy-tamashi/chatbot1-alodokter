@@ -1,62 +1,70 @@
-/* Reset box-sizing and margins */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  padding: 0;
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Basic body styling */
 body {
-  font-family: Arial, sans-serif; /* Using a clean and readable font */
-  background-color: #f4f4f4; /* Light gray background for a clean look */
-  color: #333; /* Dark gray text color for good readability */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
 
-/* Header styling */
 header {
-  background-color: #007bff; /* A calming blue for the header */
-  color: #fff; /* White text for contrast */
-  padding: 1rem; /* Adding some padding */
-  text-align: center; /* Centered text */
+  background-color: #00bcd4;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
 }
 
-/* Main content styling */
-main {
-  padding: 2rem; /* Adding padding to the main content */
+header h1 {
+  margin-bottom: 10px;
 }
 
-/* Section styling */
-section {
-  margin-bottom: 2rem; /* Adding space between sections */
-  background-color: #fff; /* White background for sections */
-  border-radius: 8px; /* Rounded corners for a soft look */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-  padding: 1.5rem; /* Padding inside sections */
+nav ul {
+  list-style: none;
 }
 
-/* Links styling */
-a {
-  color: #007bff; /* Blue color for links */
-  text-decoration: none; /* Remove underline */
+nav ul li {
+  display: inline;
+  margin: 0 15px;
 }
 
-a:hover {
-  text-decoration: underline; /* Underline on hover for better UX */
+nav ul li a {
+  color: white;
+  text-decoration: none;
 }
 
-/* Button styling */
-button {
-  background-color: #28a745; /* Green button color for success */
-  color: #fff; /* White text */
-  border: none; /* Remove default border */
-  padding: 0.5rem 1rem; /* Padding inside button */
-  border-radius: 4px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor on hover */
+.hero {
+  background: url('hero-image.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
 }
 
-button:hover {
-  background-color: #218838; /* Darker green on hover */
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff5722;
+  color: white;
+  text-decoration: none;
+  margin-top: 20px;
 }
 
+.services {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
+}
+
+.service {
+  text-align: center;
+  width: 30%;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
