@@ -8,161 +8,54 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
+   
     <script type="module">
-      import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
-      Chatbot.init({
-          chatflowid: "ef178c6e-9aed-48b7-b088-cfac591faa45",
-          apiHost: "http://localhost:3000",
-      })
-  </script>
-    <div class="container mx-auto px-4 max-w-4xl">
-      <header class="flex justify-between py-6">
-        <div class="text-2xl font-bold">Flowers`R`Us 🌷</div>
+        import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+        Chatbot.init({
+            chatflowid: "dcc7244c-2651-47ec-80dc-9c34b3bcc155",
+            apiHost: "https://flowise-zjgs.onrender.com",
+        })
+    </script>
+
+</body>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Alodokter</h1>
+        </div>
         <nav>
-          <ul class="flex gap-4 items-center text-sm">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Contact</a></li>
-            <li>
-              <button
-                class="border py-2 px-4 rounded-xl bg-pink-600 text-white self-start hover:opacity-80 text-xs uppercase"
-                href="#"
-              >
-                Cart (0)
-              </button>
-            </li>
-          </ul>
+            <ul>
+                <li><a href="#">Health</a></li>
+                <li><a href="#">Consultation</a></li>
+                <li><a href="#">Doctor Chat</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
         </nav>
-      </header>
+    </header>
 
-      <!-- Hero Section -->
-      <section class="py-6 grid grid-cols-2 items-center gap-2">
-        <div class="flex flex-col gap-2">
-          <h1 class="text-6xl uppercase font-extrabold text-neutral-600">
-            We Sell the
-            <span class="text-pink-600">Freshest</span> Flowers!
-          </h1>
-          <button
-            class="border py-2 px-4 rounded-xl bg-pink-600 text-white self-start hover:opacity-80 text-xs uppercase"
-            href="#"
-          >
-            Browse Products
-          </button>
+    <section class="hero">
+        <h2>Access Reliable Medical Information</h2>
+        <p>Chat with doctors 24/7 or book an online appointment.</p>
+    </section>
+
+    <section class="services">
+        <div class="service">
+            <h3>Health Information</h3>
+            <p>Explore medical articles to better understand your health.</p>
         </div>
-        <div>
-          <div class="overflow-hidden rounded-br-2xl rounded-tl-2xl">
-            <img src="/public/hero.jpg" alt="" />
-          </div>
+        <div class="service">
+            <h3>Online Consultation</h3>
+            <p>Book a medical appointment online quickly and easily.</p>
         </div>
-      </section>
+        <div class="service">
+            <h3>Chat with a Doctor</h3>
+            <p>Get quick answers to your questions by chatting with a medical expert.</p>
+        </div>
+    </section>
 
-      <!-- Featured -->
-      <section class="py-6">
-        <h3 class="pb-4 text-2xl">Featured Products 💐</h3>
-
-        <!-- list of products -->
-        <ul class="grid grid-cols-2 items-center gap-2">
-          <li
-            class="p-4 bg-neutral-100 rounded-xl hover:opacity-90 flex flex-col gap-2"
-          >
-            <div class="h-32 overflow-hidden rounded-xl">
-              <img
-                class="w-full h-full object-cover"
-                src="/public/a.jpg"
-                alt=""
-              />
-            </div>
-            <h4 class="text-lg font-semibold">Product A</h4>
-            <small>$2.00</small>
-            <p class="text-xs">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reiciendis expedita earum corrupti, dolorum dolores necessitatibus
-              nihil laborum inventore dolore nesciunt.
-            </p>
-            <button
-              class="border py-2 px-4 rounded-xl bg-pink-600 text-white self-start hover:opacity-80 text-xs uppercase"
-              href="#"
-            >
-              Add to Cart
-            </button>
-          </li>
-
-          <li
-            class="p-4 bg-neutral-100 rounded-xl hover:opacity-90 flex flex-col gap-2"
-          >
-            <div class="h-32 overflow-hidden rounded-xl">
-              <img
-                class="w-full h-full object-cover"
-                src="/public/b.jpg"
-                alt=""
-              />
-            </div>
-            <h4 class="text-lg font-semibold">Product B</h4>
-            <small>$2.00</small>
-            <p class="text-xs">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reiciendis expedita earum corrupti, dolorum dolores necessitatibus
-              nihil laborum inventore dolore nesciunt.
-            </p>
-            <button
-              class="border py-2 px-4 rounded-xl bg-pink-600 text-white self-start hover:opacity-80 text-xs uppercase"
-              href="#"
-            >
-              Add to Cart
-            </button>
-          </li>
-
-          <li
-            class="p-4 bg-neutral-100 rounded-xl hover:opacity-90 flex flex-col gap-2"
-          >
-            <div class="h-32 overflow-hidden rounded-xl">
-              <img
-                class="w-full h-full object-cover"
-                src="/public/c.jpg"
-                alt=""
-              />
-            </div>
-            <h4 class="text-lg font-semibold">Product C</h4>
-            <small>$2.00</small>
-            <p class="text-xs">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reiciendis expedita earum corrupti, dolorum dolores necessitatibus
-              nihil laborum inventore dolore nesciunt.
-            </p>
-            <button
-              class="border py-2 px-4 rounded-xl bg-pink-600 text-white self-start hover:opacity-80 text-xs uppercase"
-              href="#"
-            >
-              Add to Cart
-            </button>
-          </li>
-
-          <li
-            class="p-4 bg-neutral-100 rounded-xl hover:opacity-90 flex flex-col gap-2"
-          >
-            <div class="h-32 overflow-hidden rounded-xl">
-              <img
-                class="w-full h-full object-cover"
-                src="/public/d.jpg"
-                alt=""
-              />
-            </div>
-            <h4 class="text-lg font-semibold">Product D</h4>
-            <small>$2.00</small>
-            <p class="text-xs">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reiciendis expedita earum corrupti, dolorum dolores necessitatibus
-              nihil laborum inventore dolore nesciunt.
-            </p>
-            <button
-              class="border py-2 px-4 rounded-xl bg-pink-600 text-white self-start hover:opacity-80 text-xs uppercase"
-              href="#"
-            >
-              Add to Cart
-            </button>
-          </li>
-        </ul>
-      </section>
-    </div>
-  </body>
+    <footer>
+        <p>&copy; 2024 Alodokter - All Rights Reserved</p>
+    </footer>
+</body>
 </html>
