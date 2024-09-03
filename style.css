@@ -1,3 +1,4 @@
+/* Reset CSS */
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +10,7 @@ body {
   line-height: 1.6;
 }
 
+/* Header */
 header {
   background-color: #00bcd4;
   color: white;
@@ -34,12 +36,24 @@ nav ul li a {
   text-decoration: none;
 }
 
+/* Photos */
+.photos {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
 
+.photos img {
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+}
 
+/* Services */
 .services {
   display: flex;
   justify-content: space-around;
-  padding: 50px 20px;
+  padding: 20px;
 }
 
 .service {
@@ -47,23 +61,26 @@ nav ul li a {
   width: 30%;
 }
 
+/* Hero Section */
+.hero {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero h2 {
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+/* Footer */
 footer {
   background-color: #333;
   color: white;
   text-align: center;
   padding: 20px 0;
   margin-top: 20px;
-}
-
-.photos {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px 0;
-}
-
-.photos img {
-  width: 150px;
-  height: auto;
-  border-radius: 10px;
 }
