@@ -60,3 +60,16 @@ footer {
   padding: 20px 0;
   margin-top: 20px;
 }
+
+.photos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.photos img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+}
